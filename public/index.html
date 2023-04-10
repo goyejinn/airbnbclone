@@ -1,43 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/index.css">
+    <script src="https://kit.fontawesome.com/35581728fa.js" crossorigin="anonymous"></script>
+    <title>airbnb clone 코딩</title>
+    
+</head>
+<body>
+    <div id="header">
+        <div id="header_wrap">
+            <div class="header_content1"><img src="images/airbnb-logo.png"> airbnb</div>
+            <div class="header_content2">
+                <span class="header_content2_box">
+                    어디든지  <span>|</span>  언제든 일주일  <span>|  게스트 추가</span>    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                
+            </div>
+            <div class="header_content3">
+                당신의 공간을 에어비앤비하세요   <i class="fa-solid fa-globe"></i>  
+                <span id="user1">
+                    <i class="fa-solid fa-bars"></i>   <i class="fa-solid fa-circle-user"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="modal">
+        <div class="modal">회원가입</div>
+        <div class="modal">로그인</div><hr>
+        <div class="modal">당신의 공간을 에어비앤비하세요</div>
+        <div class="modal">체험 호스팅</div>
+        <div class="modal">도움말</div>
+    </div>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <hr>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <div id="menu">
+        <div id="menu_wrap">
+            <div class="menu_content"><i class="fa-solid fa-tower-observation"></i><br>최고의 전망</div>
+            <div class="menu_content"><i class="fa-solid fa-igloo"></i><br>기상천외한 숙소</div>
+            <div class="menu_content"><i class="fa-solid fa-mountain-city"></i><br>한옥</div>
+            <div class="menu_content"><i class="fa-solid fa-tree"></i><br>한적한 시골</div>
+            <div class="menu_content"><i class="fa-solid fa-person-skiing"></i><br>스키</div>
+            <div class="menu_content"><i class="fa-solid fa-bed"></i><br>개인실</div>
+            <div class="menu_content"><i class="fa-solid fa-umbrella-beach"></i><br>해변 바로 앞</div>
+            <div class="menu_content"><i class="fa-solid fa-fire"></i><br>인기 급상승</div>
+            <div class="menu_content"><i class="fa-solid fa-landmark"></i><br>료칸</div>
+            <div class="menu_content"><i class="fa-solid fa-mountain-sun"></i><br>국립공원</div>
+            <div class="menu_content"><i class="fa-solid fa-water-ladder"></i><br>멋진 수영장</div>
+            <div class="menu_content"><i class="fa-solid fa-hotel"></i><br>저택</div>
+        </div>
+    </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <div id="main">
+        <div id="main_wrap1">
+            <div class="main_content1">
+                <img src="images/1.png" data-src="images/1.png" class="pic"><br>
+                <span>
+                    Ganggu-myeon, Yeongdeok-gun, 한국<br>
+                    바다 전망<br>
+                    4월 1일~6일<br>
+                    <b>\286,200/박</b>
+                </span>
+            </div>
+            <div class="main_content1">
+                <img src="images/2.png" data-src="images/2.png" class="pic"><br>
+                <span>
+                    Geoje-myeon, Geoje-si, 한국<br>
+                    바다 전망<br>
+                    4월 16일~21일<br>
+                    <b>\467,460/박</b>
+                </span>
+            </div>
+            <div class="main_content1">
+                <img src="images/3.png" data-src="images/3.png" class="pic"><br>
+                <span>
+                    南伊豆町, 静岡県, 일본<br>
+                    산 및 바다 전망<br>
+                    6월 14일~19일<br>
+                    <b>\675,706/박</b>
+                </span>
+            </div>
+            <div class="main_content1">
+                <img src="images/4.png" data-src="images/4.png" class="pic"><br>
+                <span>
+                    Niseko, Abuta District, 일본<br>
+                    산 전망<br>
+                    4월 1일~6일<br>
+                    <b>\339,394/박</b>
+                </span>
+            </div>
+        </div>
+
+        <div id="main_wrap2">
+            <div class="main_content2">
+                <img src="images/5.png" data-src="images/5.png" class="pic"><br>
+                <span>
+                    Abiansemal, 인도네시아<br>
+                    5,275km 거리<br>
+                    12월 14일~19일<br>
+                    <b>\518,356/박</b>
+                </span>
+            </div>
+            <div class="main_content2">
+                <img src="images/6.png" data-src="images/6.png" class="pic"><br>
+                <span>
+                    Sindun-myeon, Icheon-si, 한국<br>
+                    46km 거리<br>
+                    4월 2일~7일<br>
+                    <b>\106,129/박</b>
+                </span>
+            </div>
+            <div class="main_content2">
+                <img src="images/7.png" data-src="images/7.png" class="pic"><br>
+                <span>
+                    Hua Hin District, 태국<br>
+                    3,872km 거리<br>
+                    4월 15일~20일<br>
+                    <b>\168,629/박</b>
+                </span>
+            </div>
+            <div class="main_content2">
+                <img src="images/8.png" data-src="images/8.png" class="pic"><br>
+                <span>
+                    Selat, 인도네시아<br>
+                    5,256km 거리<br>
+                    11월 8일~13일<br>
+                    <b>\378,449/박</b>
+                </span>
+            </div>
+        </div>
+
+        <div id="lightbox">
+            <img src="images/1.png" alt="" id="lightboxImage">
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="footer">
+        <div id="footer_wrap">
+            <div class="footer_content1">
+                <span class="left">
+                    © 2023 Airbnb, Inc. · 개인정보 처리방침 · 이용약관 · 사이트맵 · 한국의 변경된 환불 정책 · 회사 세부정보
+                </span>
+                <span class="right">
+                    <i class="fa-solid fa-globe"></i> 한국어 (KR) ₩ KRW 지원 및 참고 자료
+                </span>
+            </div>
+            <div class="footer_content2">
+                <span>웹사이트 제공자: Airbnb Ireland UC, private unlimited company, 8 Hanover Quay Dublin 2, D02 DP23 Ireland | 이사: Dermot Clarke, Killian Pattwell, Andrea Finnegan | VAT 번호: IE9827384L | 사업자 등록 번호: IE 511825 | 연락처: terms@airbnb.com, 웹사이트, 080-822-0230 | 호스팅 서비스
+                    <br>제공업체: 아마존 웹서비스 | 에어비앤비는 통신판매 중개자로 에어비앤비 플랫폼을 통하여 게스트와 호스트 사이에 이루어지는 통신판매의 당사자가 아닙니다. 에어비앤비 플랫폼을 통하여 예약된 숙소, 체험, 호스트 서비스에 관한 의무와 책임은 해당 서비스를 제공하는 호스트에게 있습니다.</span>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="src/index.js"></script>
+</body>
 </html>
